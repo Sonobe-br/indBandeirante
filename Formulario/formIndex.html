@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./formStyle.css" media="screen">
+
+    <title>Cadastro de Serviços</title>
+    
+  </head>
+  
+  <div id="top-retangulo"></div>
+  <!-- <img class="logo-band" src="./LOGO_BANDEIRANTES-1 (1).jpg"> -->
+
+  <body>
+
+    
+
+    <div>
+      <h1 id="titulo">Cadastro de Serviços Indústria Bandeirante</h1> <!-- Cabeçalho e sub-cabeçalho da planilha -->
+      <p id="subtitulo">Preencha a Ordem de Serviço</p>
+    </div>
+
+    <form>
+      <fieldset class="grupo"> <!-- Dando início na estrutura da tabela -->
+        <div class="campo">
+          <label for="Primeiro Nome"><strong>Nome</strong></label> 
+          <input type="text" name="nome" id="nome" required> <!-- O required é um método que obriga o usuário a preenceher o campo -->
+        </div>
+
+        <div class="campo">
+          <label for="Segundo Nome"><strong>Setor</strong></label>
+          <input type="text" name="Segundo Nome" id="Segundo Nome" required>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="Ramal"><strong>Ramal</strong></label>
+        <input type="Ramal" name="Ramal" id="ramal" required>
+      </div>
+
+      <div class="campo">
+        <label for="E-mail"><strong>E-mail</strong></label>
+        <input type="email" name="E-mail" id="E-mail" required>
+      </div>
+
+      <div class="campo">
+        <label><strong>Qual o atendimento?</strong></label>
+        <label>
+          <input type="radio" name="devweb" value="frontend" checked>TOTVS <!-- A função checked manterá a primeira opção marcada -->
+        </label>
+
+        <label>
+          <input type="radio" name="devweb" value="backend">E-mail
+        </label>
+
+        <label>
+          <input type="radio" name="devweb" value="fullstack">Impressora
+        </label> 
+      </div>
+
+      <div class="campo"> 
+        <label for="senioridade"><strong>Service Desk</strong></label>
+        <select id="senioridade">
+          <option selected disabled value="">Selecione</option>
+          <option>Prothevs</option>
+          <option>Hardware</option>
+          <option>Servidor</option>
+        </select>
+      </div>
+
+      <fieldset class="grupo">
+        <div id="check">
+          <label><strong>Selecione o setor:</strong></label><br><br>
+          <input type="checkbox" name="tecnologia1" value="HTML">
+          <label for="tecnologia1">Compras</label>
+          <input type="checkbox" name="tecnologia2" value="CSS">
+          <label for="tecnologia2">Faturamento</label>
+          <input type="checkbox" name="tecnologia3" value="JavaScrit">
+          <label for="tecnologia3">Expedição</label>
+          <input type="checkbox" name="tecnologia4" value="PHP">
+          <label for="tecnologia4">Representante Comercial</label>
+          <input type="checkbox" name="tecnologia5" value="C#">
+          <label for="tecnologia5">RH</label>
+          <input type="checkbox" name="tecnologia6" value="Python">
+          <label for="tecnologia6">Produção</label>
+          <input type="checkbox" name="tecnologia7" value="Java">
+          <label for="tecnologia7">Produção</label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br>
+        <label><strong>Descreva o problema</strong></label>
+        <textarea raw='6' style="width: 370px; margin: 0px 484.938px 0px 0px; height: 80px;" id="experiencia" name="experiencia"></textarea> 
+      </div>
+
+      <button class="botao" type="submit">Enviar</button>
+
+    </form>
+    <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAEoXOt5UQkxWTkY3Q1E0MElZUFNWMzNPM0dBVzRYVS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+  </body>
+</html>

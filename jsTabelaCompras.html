@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabela de Compras</title>
+
+        <script type="text/javascript" src="./tabelaBand/jsTabelaCompras.js"></script> 
+        <style>
+            #dfPessoas {
+                font: 14px Verdana, Arial, Helvetica, sans-serif; 
+                margin-left: 35%;
+                margin-top: 150px;
+            }
+
+            #dtPessoas {
+                font: 14px Verdana, Arial, Helvetica, sans-serif;
+                margin-left: 25%;
+            }
+
+            table tr td {
+                width: 140px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="dfPessoas">
+            <form nome="fPessoas">
+                <label>Série</label><br/>
+                <input type="text" name="txtSerie" /> <br/><br/>
+                <label>Referencia</label><br/>
+                <input type="text" name="txtReferencia" /> <br/><br/>
+                <label>Produto</label><br/>
+                <input type="text" name="txtProduto" /> <br/><br/>
+                <label>Valor</label><br/>
+                <input type="text" name="txtValor" /><br/><br/>
+                <input type="button" value="Adiciona Objeto" onclick="cadastroDeObjetos(txtSerie.value, txtReferencia.value, txtProduto.value, txtValor.value)" /> 
+            </form>
+        </div>
+        <br/><br/>
+        <div id="dtPessoas">
+            <table id="tbPessoas">
+                <thead>
+                    <tr>
+                        <td>Código</td>
+                        <td>Série</td>
+                        <td>Referencia</td>
+                        <td>Produto</td>
+                        <td>Valor</td>
+                    </tr>
+                </thead>
+            </table>
+        </div> 
+    </body>
+</html>

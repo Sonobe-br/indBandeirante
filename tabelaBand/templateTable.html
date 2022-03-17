@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temlate JavaScript</title>
+</head>
+<body>
+    <form id="table" method="get" target="_blank"></form>
+    <script>
+
+        let users = {
+
+            primeiroNome: 'Daniel',
+            segundoNome: 'Sonobe Silveira',
+            cidade: 'São Paulo'
+        }
+        
+        console.log(`Olá meu nome é ${users.primeiroNome} ${users.segundoNome}, sou natural de ${users.cidade} capital.`);
+
+        let tabela = document.createElement('table');
+        table.border = 1;
+
+        table.innerHTML =
+            '<thead>' + 
+                '<tr>' + 
+                    '<th>Nome</th>' +
+                    '<th>Sobrenome</th>' +
+                    '<th>Cidade</th>' +
+                '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+                '<tr>' +
+                    '<td>' + user.primeiroNome + '</td>' +   
+                    '<td>' + user.segundoNome + '</td>' +   
+                    '<td>' + user.cidade + '</td>' +
+                '</tr>' +
+            '</tbody>';
+            
+            document.querySelector('body').append(table);
+
+    </script>
+
+
+
+</body>
+</html>
