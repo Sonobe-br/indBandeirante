@@ -15,5 +15,7 @@ function cadastroDeObjetos (serie, referencia, produto, valor) {
     cellReferencia.innerHTML = referencia;
     cellProduto.innerHTML = produto;
     cellValor.innerHTML = valor;
+
+    document.getElementById('tbPessoas').value='';
     
 }
