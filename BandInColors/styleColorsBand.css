@@ -1,0 +1,50 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 62.5%;
+}
+.container {
+  position: relative;
+  right: -20px;
+  overflow-y: auto;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.pics {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: rgba(255,255,255,0.6);
+  padding: 16px;
+  box-shadow: 5px 5px 10px #000;
+}
+.targetImage {
+  width: 80%;
+  margin: 0 10%;
+  box-shadow: 5px 5px 10px #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.frame {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.colors {
+  position: fixed;
+  z-index: 9999;
+  top: 16px;
+  left: 16px;
+  background: rgba(255,255,255,0.6);
+  padding: 16px;
+  box-shadow: 5px 5px 10px #000;
+}
+li {
+  padding: 8px;
+  margin: 4px;
+  transition: background 0.4s ease-in-out;
+}
